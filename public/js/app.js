@@ -15,7 +15,6 @@ weatherForm.addEventListener('submit', (e) => {
             if(data.error){
                 messageOne.textContent = data.error
             } else {
-                console.log(data.image)
                 messageOne.textContent = data.location
                 messageImage.src = data.image
                 messageTwo.textContent = data.forecast
